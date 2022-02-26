@@ -1,60 +1,81 @@
 @charset "UTF-8";
 
-*{
-    padding: 0px;
-    margin: 0px;
-    
-}
-
 body{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    min-height: 100vh ;
-    background: linear-gradient(45deg, rgba(139, 20, 56, 0.973), rgb(21, 53, 78));
+    margin: 0;
+    padding: 0;
+    background-color: rgb(22, 18, 77);
 }
 
-.gtr input{
-    display: block;
-    border: none;
-    outline: none;
-    padding: 9px;
+div{
+    max-width: 280px;
+    max-height: 300px;
+    background-image: linear-gradient(to right,rgb(8, 57, 71), rgb(82, 3, 42));
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    box-shadow: 15px 15px 20px rgba(0,0,0,1);
+    border-radius: 0px 20px 0px 20px;
 }
 
-.logo h2{
+div h2{
     color: white;
+    margin: 0;
+    padding: 20px;
     text-align: center;
-    
+    font-size: 2em;
+    font-family: 'Roboto Mono', monospace;
+    letter-spacing: 5px;
+    text-transform: uppercase;
 }
 
-.login{
-    padding: 65px;
-    background-color: black;
-    border-radius: 15px;
-    display: inline-block;
-}
-
-.botao input{
-    display: block;
-    margin: auto;
-    border: none;
-    width: 50%;
-    border-radius: 12px;
-    height: 27px;
+div .text,.pass{
     color: white;
-    background-color: blue;
+    background: none;
+    width: 180px;
+    height: 30px;
+    margin: 10px 10px 20px 40px;
+    padding: 5px;
+    outline: none;
+    border: 1px solid #00BFFF;
+    border-radius: 25px;
+    font-size: 15px;
+    font-family: 'Rubik', sans-serif;
+    text-align: center;
+    letter-spacing: 2px;
+}
+.text:hover{
+    outline: solid 3px rgb(0, 139, 35);
+    border-radius: 5px;
 }
 
-.botao input:hover{
-    background-color: green;
-}
-
-.espaco{
-    margin: 30px 0px;
-}
-
-.gtr:hover{
+.pass:hover{
     outline: solid 3px green;
-    border-radius: 7px;
+    border-radius: 5px;
+}
 
+div .pass{
+    margin: 5px 40px;
+}
+
+div .login{
+    width: 100px;
+    height: 35px;
+    background: none;
+    outline: none;
+    border: 1px solid #7CFC00;
+    border-radius: 10px;
+    color: #fff;
+    margin: 30px 90px;
+    font-size: 15px;
+    font-weight: 800;
+    transition: 2.0s;
+}
+
+.login:hover{
+    box-shadow:0px 0px 20px 0 #7CFC00,
+               0px 0px 20px 0 #7CFC00 inset,
+               0px 0px 20px 0 #7CFC00,
+               0px 0px 20px 0 #7CFC00 inset;
+    text-shadow:0 0 5px #7CFC00,0 0 5px #7CFC00;
 }
